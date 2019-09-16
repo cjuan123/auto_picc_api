@@ -1,0 +1,3 @@
+HOST: http://139.159.194.216:8080  # PICC 长护险
+
+department: /web/department/add   # 添加部门
