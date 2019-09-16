@@ -22,7 +22,7 @@ class ReadYaml:
         """打开yaml文件"""
         try:
             with open(self.path, 'r', encoding='utf-8') as u:
-                url_data = yaml.load(u)
+                url_data = yaml.load(u, Loader=yaml.FullLoader)
             return url_data
         except Exception as e:
             self.log.error("【读取yaml文件错误】 - 【错误原因：%s】" % e)
